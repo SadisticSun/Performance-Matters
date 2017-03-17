@@ -1,18 +1,27 @@
-# Performance matters
+# Performance matters - Bootstrap Documentation Site Optimization
 
-## Project setup
+## Settings
+* Chrome Dev Tools - Network Throttle @ 2G Regular Speed
+* Caching Disabled
 
-This project serves an adapted version of the [Bootstrap documentation website](http://getbootstrap.com/). It is based on the [github pages branche of Bootstrap](https://github.com/twbs/bootstrap/tree/gh-pages). 
+### Stats
 
-Differences from actual Bootstrap documentation:
+Stats BEFORE optimization
+* Size: 1.2MB
+* DOM Content Loaded @ 19.38s
+* Full load @ 41.56s
 
-- Added custom webfont
-- Removed third party scripts
-- The src directory is served with [Express](https://expressjs.com/).
-- Templating is done with [Nunjucks](https://mozilla.github.io/nunjucks/)
+Stats AFTER optimization
+* Size: 
+* DOM Content Loaded @ 
+* Full load @ 
 
-## Getting started
 
-- Install dependencies: `npm install`
-- Serve: `npm start`
-- Expose localhost: `npm run expose`
+### Changes made
+* Compressed IMG with TinyJPG
+* Changed IMG to WEBP
+* Added critical CSS
+* Concatenated & minified CSS into 'docs.css'
+* Enabled GZIP compression for Express with middleware
+* Minified 'bootstrap.css' to 'bootstrap.min.css'
+
